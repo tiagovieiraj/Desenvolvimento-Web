@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script type="text/javascript" src="form.js"></script>
+</head>
+
+<body>
+    <h1>Formulário</h1>
+    <form class="formulario" method="post" onsubmit="validaForm(this)">
+        <div>
+            <label for="nome">Nome</label>
+            <input type="text" id="nomeid" placeholder="Digite seu nome" name="nome" autocomplete="off" />
+        </div>
+        <div>
+            <label for="idade">Idade</label>
+            <input type="text" id="idadeid" placeholder="Digite sua idade" name="idade" autocomplete="off" />
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="emailid" placeholder="Digite seu email" name="email" autocomplete="off"
+                required="" />
+        </div>
+        <div>
+            <label for="hobbie">Hobbie</label>
+            <input type="text" id="hobbieid" placeholder="Digite seu hobbie" name="hobbie" autocomplete="off" />
+        </div>
+        <div>
+            <input type="submit" id="btid" name="submit" value="Enviar">
+            <!-- <a href="mailto:tiagovieiraj@gmail.com?subject=Dados%20do%20usuário?body=nomeid%0didadeid%0demailid%0dhobbieid"></a> -->
+        </div>
+    </form>
+</body>
+
+</html>
