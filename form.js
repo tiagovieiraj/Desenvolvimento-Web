@@ -1,22 +1,18 @@
-function validaForm(frm) {
-    //verifica se o campo nome foi preenchido e 
-    //possui no mínimo três caracteres
-    if (frm.nome.value == "" || frm.nome.value === null || frm.nome.value.lenght < 3) {
+function validaForm(event) {
+    event.preventDefault();
+    var frm = event.target.elements;
+    if (!frm.nome.value || frm.nome.value.length < 3) {
         alert("Por favor, digite seu nome.");
         frm.nome.focus();
-        //o form não é enviado
-        return false;
     }
 
-    if (frm.idade.value == "" || frm.idade.value === null ) {
+    if (!frm.idade.value) {
         alert("Por favor, digite sua idade.");
         frm.idade.focus();
     }
 
-    
-    if (frm.hobbie.value == "" || frm.hobbie.value === null ) {
+    if (!frm.hobbie.value) {
         alert("Por favor, conte-nos um pouco sobre você.");
         frm.hobbie.focus();
-        return false;
     }
 }

@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
     <link rel="stylesheet" href="estilo.css">
-    <script type="text/javascript" src="form.js"></script>
 </head>
 
 <body>
+    <script type="text/javascript" src="form.js"></script>
     <h1>Formulário</h1>
-    <form class="formulario" method="post" onsubmit="validaForm(this)">
+    <form class="formulario" onsubmit="return validaForm(event)">
         <div>
             <label for="nome">Nome</label>
             <input type="text" id="nomeid" placeholder="Digite seu nome" name="nome" autocomplete="off" />
@@ -29,8 +29,7 @@
             <input type="text" id="hobbieid" placeholder="Digite seu hobbie" name="hobbie" autocomplete="off" />
         </div>
         <div>
-            <input type="submit" id="btid" name="submit" value="Enviar">
-            <!-- <a href="mailto:tiagovieiraj@gmail.com?subject=Dados%20do%20usuário?body=nomeid%0didadeid%0demailid%0dhobbieid"></a> -->
+            <button type="submit" id="btid" name="submit">Enviar</button>
         </div>
     </form>
 </body>
